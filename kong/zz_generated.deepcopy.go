@@ -1578,6 +1578,36 @@ func (in *Route) DeepCopyInto(out *Route) {
 		*out = new(bool)
 		**out = **in
 	}
+	if in.WallarmMode != nil {
+		in, out := &in.WallarmMode, &out.WallarmMode
+		*out = new(string)
+		**out = **in
+	}
+	if in.WallarmApplication != nil {
+		in, out := &in.WallarmApplication, &out.WallarmApplication
+		*out = new(int)
+		**out = **in
+	}
+	if in.WallarmParseResponse != nil {
+		in, out := &in.WallarmParseResponse, &out.WallarmParseResponse
+		*out = new(bool)
+		**out = **in
+	}
+	if in.WallarmParseWebsocket != nil {
+		in, out := &in.WallarmParseWebsocket, &out.WallarmParseWebsocket
+		*out = new(bool)
+		**out = **in
+	}
+	if in.WallarmUnpackResponse != nil {
+		in, out := &in.WallarmUnpackResponse, &out.WallarmUnpackResponse
+		*out = new(bool)
+		**out = **in
+	}
+	if in.WallarmPartnerClientUUID != nil {
+		in, out := &in.WallarmPartnerClientUUID, &out.WallarmPartnerClientUUID
+		*out = new(string)
+		**out = **in
+	}
 	return
 }
 
