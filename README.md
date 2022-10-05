@@ -1,6 +1,8 @@
 # go-kong
 
-Go bindings for Kong's Admin API
+Go bindings for Kong's Admin API with Wallarm configuration options.
+
+Original repository https://github.com/Kong/go-kong
 
 [![GoDoc](https://godoc.org/github.com/kong/go-kong?status.svg)](https://godoc.org/github.com/kong/go-kong/kong)
 [![Build Status](https://github.com/kong/go-kong/workflows/CI%20Test/badge.svg)](https://github.com/kong/go-kong/actions?query=branch%3Amain+event%3Apush)
@@ -15,7 +17,7 @@ go get github.com/kong/go-kong/kong
 
 ## Compatibility
 
-`go-kong` is compatible with Kong 1.x and 2.x.
+`go-kong` is compatible with Wallarm modified Kong 1.x and 2.x and used by [Kong kubernetes ingress controller](https://github.com/wallarm/kong-kubernetes-ingress-controller).
 Semantic versioning is followed for versioning `go-kong`.
 
 ## Generators
